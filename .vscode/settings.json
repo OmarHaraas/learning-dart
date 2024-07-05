@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "demo.h": "c"
+  },
+  "editor.codeActionsOnSave": {
+    "quickfix.insertSemicolon": "explicit"
+  }
+}

@@ -1,0 +1,31 @@
+Suggest you want to calculate the sum from 1 to n using recursion concept
+in programming..
+
+> > sum_recursion(n)
+
+Ok, first thing in recursion is to find the [base case].
+we will start from n and minus it n becomes 1, so the base
+case is still minusing n till reaching to 1.
+in code: `if (n == 1) { return 1; }`
+
+But if n is still bigger than 1! this will be the **recursion** case. In recursion case we will retrun the value of n `return n + some_thng`, and minus its value `n-1`, then passing it to our funtion again `sum_recursion` like: `sum_recursion(n-1)` but do not forget to replace the `some_thng` with the recusion`sum_recursion(n-1)` to become:
+`retrun n + sum_recursion(n-1)`
+#full code in dart:
+
+```dart
+int sum_recursion(int n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n + sum_recursion(n - 1);
+  }
+}
+```
+
+# if it does not make sence, see this example:
+
+## we want to calculate sum from x to y using recursion
+
+> > sum_recursion2xy(x,y)
+
+# Task for you: use recursion to
